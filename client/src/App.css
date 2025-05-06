@@ -35,6 +35,7 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  color: red;
 }
 
 /* Grouping content
@@ -70,6 +71,7 @@ pre {
  */
 a {
   background-color: transparent;
+  color: violet;
 }
 
 /**
@@ -111,6 +113,7 @@ samp {
  */
 small {
   font-size: 80%;
+  color: darkgray;
 }
 
 /**
