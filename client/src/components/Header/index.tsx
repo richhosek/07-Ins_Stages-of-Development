@@ -5,6 +5,7 @@ const Header = () => {
         <h1 className="m-0">Word Guess Master</h1>
         <p className="m-0">Guess the movie title!</p>
       </div>
+      <p>The best word guessing game in the business.</p>
     </header>
   );
 };

@@ -15,6 +15,8 @@ export const getInitialGameState = async (): Promise<Game> => {
     return data;
   } catch (error) {
     console.error('Failed to fetch game start:', error);
+    console.log("Have you seeded the database?");
+    
     throw error;
   }
 };
@@ -29,7 +31,7 @@ export const checkLetter = async (gameId: string, guessData: { letter: string })
       body: JSON.stringify(guessData)
     });
     if (!response.ok) {
-      throw new Error('Check the Network tab.');
+      throw new Error('Check the Network tab for details.');
     }
     const data: Game = await response.json();
     return data;
